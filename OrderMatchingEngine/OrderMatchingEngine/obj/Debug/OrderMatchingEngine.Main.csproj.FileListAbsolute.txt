@@ -1,0 +1,25 @@
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\obj\Debug\OrderMatchingEngine.Main.csprojResolveAssemblyReference.cache
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderMatchingEngine.Main.exe.config
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderMatchingEngine.Main.exe
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderMatchingEngine.Main.pdb
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Disruptor.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Disruptor.pdb
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Disruptor.xml
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\obj\Debug\OrderMatchingEngine.Main.exe
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\obj\Debug\OrderMatchingEngine.Main.pdb
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderManagementEngine.Core.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\QuickFix.dll
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderManagementEngine.Core.pdb
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\FIX.OrderMatchingEngine.cfg
+C:\Projects\tst.projects\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderMatchingEngine.Main.exe.config
+C:\Projects\tst.projects\OrderMatchingEngine\OrderMatchingEngine\obj\Debug\OrderMatchingEngine.Main.exe
+C:\Projects\tst.projects\OrderMatchingEngine\OrderMatchingEngine\obj\Debug\OrderMatchingEngine.Main.pdb

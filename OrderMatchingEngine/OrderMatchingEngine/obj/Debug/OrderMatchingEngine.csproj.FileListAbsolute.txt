@@ -1,0 +1,2 @@
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\OrderMatchingEngine.exe.config
+C:\Projects\C Sharp\Interviews\CreditSuisse\OrderMatchingEngine\OrderMatchingEngine\bin\Debug\CreditSuisse.OrderMatchingEngine.exe.config
