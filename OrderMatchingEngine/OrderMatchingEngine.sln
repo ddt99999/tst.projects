@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMatchingEngine.Main", "OrderMatchingEngine\OrderMatchingEngine.Main.csproj", "{3AC63B99-F8D3-4B67-8801-F431A06B5FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementEngine.Core", "OrderManagementEngine.Core\OrderManagementEngine.Core.csproj", "{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC63B99-F8D3-4B67-8801-F431A06B5FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC63B99-F8D3-4B67-8801-F431A06B5FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC63B99-F8D3-4B67-8801-F431A06B5FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC63B99-F8D3-4B67-8801-F431A06B5FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

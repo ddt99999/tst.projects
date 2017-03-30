@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CD25977-71C0-4E3A-A213-47AE18A0B7D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderManagementEngine.Core</RootNamespace>
+    <AssemblyName>OrderManagementEngine.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Disruptor, Version=3.3.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Disruptor.3.3.5.1\lib\net45\Disruptor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="QuickFix, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QuickFix.Net.1.7.0\lib\QuickFix.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessEntities\Asset.cs" />
+    <Compile Include="BusinessEntities\IOrder.cs" />
+    <Compile Include="BusinessEntities\MarketBook.cs" />
+    <Compile Include="BusinessEntities\Order.cs" />
+    <Compile Include="BusinessEntities\OrderBook.cs" />
+    <Compile Include="BusinessEntities\OrderCancelReport.cs" />
+    <Compile Include="BusinessEntities\OrderComparer.cs" />
+    <Compile Include="BusinessEntities\OrderList.cs" />
+    <Compile Include="BusinessEntities\OrderMatchReport.cs" />
+    <Compile Include="BusinessEntities\OrderMatchType.cs" />
+    <Compile Include="BusinessEntities\OrderSide.cs" />
+    <Compile Include="BusinessEntities\OrderSorter.cs" />
+    <Compile Include="BusinessEntities\OrderStatus.cs" />
+    <Compile Include="BusinessEntities\OrderTree.cs" />
+    <Compile Include="BusinessEntities\OrderType.cs" />
+    <Compile Include="BusinessEntities\TradingAccount.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderEventRingBufferCaller.cs" />
+    <Compile Include="Disruptor\DisruptorFactory.cs" />
+    <Compile Include="Disruptor\IDisruptorFactory.cs" />
+    <Compile Include="Interfaces\IRingBufferCaller.cs" />
+    <Compile Include="NewOrderEvents\NewOrderEvent.cs" />
+    <Compile Include="NewOrderEvents\NewOrderEventRingBufferCaller.cs" />
+    <Compile Include="NewOrderEvents\NewOrderMatcher.cs" />
+    <Compile Include="NewOrderEvents\NewOrderPersister.cs" />
+    <Compile Include="NewOrderEvents\NewOrderResponder.cs" />
+    <Compile Include="NewOrderEvents\NewOrderStatisticsRecorder.cs" />
+    <Compile Include="NewOrderEvents\NewOrderTranslator.cs" />
+    <Compile Include="NewOrderEvents\NewOrderRegistrator.cs" />
+    <Compile Include="Interfaces\IEngine.cs" />
+    <Compile Include="Messages\Fix44MessageHandler.cs" />
+    <Compile Include="Messages\FixFieldsConverter.cs" />
+    <Compile Include="Messages\IFix44MessageHandler.cs" />
+    <Compile Include="Messages\IFixMessageHandler.cs" />
+    <Compile Include="Messages\ITagValueMessage.cs" />
+    <Compile Include="Messages\MessageType.cs" />
+    <Compile Include="Messages\ValueType.cs" />
+    <Compile Include="Networks\NetworkRequestHandler.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderStatisticsRecorder.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderEvent.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderEventTranslator.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderPersister.cs" />
+    <Compile Include="CancelOrderEvents\CancelOrderResponder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FixConnectivityHandler.cs" />
+    <Compile Include="Services\IFixConnectivityHandler.cs" />
+    <Compile Include="Services\IMarketBookFactory.cs" />
+    <Compile Include="Services\IOrderBookFactory.cs" />
+    <Compile Include="Services\IOrderBookPriceDisplayService.cs" />
+    <Compile Include="Services\IOrderBookRepository.cs" />
+    <Compile Include="Services\IOrderMatchingService.cs" />
+    <Compile Include="Services\IStatisticRecordingService.cs" />
+    <Compile Include="Services\LimitOrderMatchingService.cs" />
+    <Compile Include="Services\MarketBookFactory.cs" />
+    <Compile Include="Services\OrderBookFactory.cs" />
+    <Compile Include="Services\OrderBookPriceDisplayService.cs" />
+    <Compile Include="Services\OrderBookRepository.cs" />
+    <Compile Include="Services\MarketOrderMatchingService.cs" />
+    <Compile Include="Services\StatisticRecordingService.cs" />
+    <Compile Include="Utils\ConcurrentEnumerator.cs" />
+    <Compile Include="Utils\ConcurrentSortedDictionary.cs" />
+    <Compile Include="Utils\DIContainer.cs" />
+    <Compile Include="Utils\EntityException.cs" />
+    <Compile Include="Utils\IdGenerator.cs" />
+    <Compile Include="Utils\OrderExtensions.cs" />
+    <Compile Include="Utils\OrderIdGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
