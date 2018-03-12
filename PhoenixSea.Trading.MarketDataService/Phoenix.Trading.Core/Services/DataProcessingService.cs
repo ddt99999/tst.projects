@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using FileHelpers;
 
-namespace PhoenixSea.Trading.MarketDataService.Services
+namespace PhoenixSea.Trading.Core.Services
 {
     public class DataProcessingService : IDataProcessingService
     {

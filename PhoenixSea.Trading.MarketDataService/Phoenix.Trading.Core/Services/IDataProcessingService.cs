@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PhoenixSea.Trading.MarketDataService.Services
+namespace PhoenixSea.Trading.Core.Services
 {
     public interface IDataProcessingService
     {

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixSea.Common.Data", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixSea.Common.Core", "PhoenixSea.Common.Core\PhoenixSea.Common.Core.csproj", "{7A52E2BD-422A-44A5-9ECB-B2B355C5959D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixSea.Trading.Core", "Phoenix.Trading.Core\PhoenixSea.Trading.Core.csproj", "{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,14 @@ Global
 		{7A52E2BD-422A-44A5-9ECB-B2B355C5959D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A52E2BD-422A-44A5-9ECB-B2B355C5959D}.Release|x64.ActiveCfg = Release|Any CPU
 		{7A52E2BD-422A-44A5-9ECB-B2B355C5959D}.Release|x64.Build.0 = Release|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Debug|x64.Build.0 = Debug|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Release|x64.ActiveCfg = Release|Any CPU
+		{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace PhoenixSea.Trading.MarketDataService.Services
+namespace PhoenixSea.Trading.Core.Services
 {
     public class DataDownloadService : IDataDownloadService
     {

@@ -3,6 +3,7 @@ using System.IO;
 using Easy.Logger;
 using Easy.Logger.Interfaces;
 using PhoenixSea.Common.Data.EF;
+using PhoenixSea.Trading.Core.Services;
 using PhoenixSea.Trading.MarketDataService.Services;
 using PhoenixSea.Trading.NoSql.Redis;
 using PhoenixSea.Trading.SqlServer.MarketData.Repositories;
@@ -36,8 +37,11 @@ namespace PhoenixSea.Trading.MarketDataService.Bootstrappers
             DependencyContainer.Register<IUsTreasuryDataService, UsTreasuryDataService>(new ContainerControlledLifetimeManager());
 
             DependencyContainer.Register<IDataDownloadService, DataDownloadService>(new ContainerControlledLifetimeManager());
-            DependencyContainer.Register<IDataStoringService, DataStoringService>(new ContainerControlledLifetimeManager());
             DependencyContainer.Register<IDataProcessingService, DataProcessingService>(new ContainerControlledLifetimeManager());
+            //DependencyContainer.Register(typeof(IMarketDataService<>), typeof(DataProcessingService), new ContainerControlledLifetimeManager());
+
+            DependencyContainer.Register<IUsTreasuryMarketDataService, UsTreasuryMarketDataService>(new ContainerControlledLifetimeManager());
+            DependencyContainer.Register<IHangSengStockMarketDataService, HangSengStockYahooMarketDataService>(new ContainerControlledLifetimeManager());
 
             DependencyContainer.Register<IApplication, MarketDataServiceApp>(new ContainerControlledLifetimeManager());
         }

@@ -102,7 +102,6 @@
     <Compile Include="Bootstrappers\Bootstrapper.cs" />
     <Compile Include="Bootstrappers\DependencyRegistrar.cs" />
     <Compile Include="Bootstrappers\MarketDataServiceApp.cs" />
-    <Compile Include="Services\IDataStoringService.cs" />
     <Compile Include="Service1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -111,13 +110,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\DataDownloadService.cs" />
-    <Compile Include="Services\DataProcessingService.cs" />
-    <Compile Include="Services\DataStoringService.cs" />
-    <Compile Include="Services\IDataDownloadService.cs" />
-    <Compile Include="Services\IDataProcessingService.cs" />
+    <Compile Include="Services\HangSengStockYahooMarketDataService.cs" />
+    <Compile Include="Services\IHangSengStockMarketDataService.cs" />
     <Compile Include="Services\IUsTreasuryDataService.cs" />
+    <Compile Include="Services\IUsTreasuryMarketDataService.cs" />
     <Compile Include="Services\UsTreasuryDataService.cs" />
+    <Compile Include="Services\UsTreasuryMarketDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -128,6 +126,10 @@
     <None Include="sampledata.json" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Phoenix.Trading.Core\PhoenixSea.Trading.Core.csproj">
+      <Project>{01DC5DDB-ABD6-4497-84D6-52FE916CBE49}</Project>
+      <Name>PhoenixSea.Trading.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PhoenixSea.Common.Data\PhoenixSea.Common.Data.csproj">
       <Project>{A6B9985F-EBF5-430E-BB16-2A9A32E89CAD}</Project>
       <Name>PhoenixSea.Common.Data</Name>
